@@ -1,0 +1,76 @@
+algorithm CHECKPOINT
+var
+T=string[200];
+i,j,k:integer ;
+
+begin
+  
+
+read(T)
+
+ i=0
+ j=1
+ k=0
+
+while (T[i]<>".") 
+ 
+  if T[i]==" " then 
+   j=j+1 ; 
+  end if 
+ if T[i]=="a" || T[i]=="e"|| T[i]=="u" ||T[i]=="i" ||T[i]=="y" ||T[i]=="o" ||T[i]=="A" ||T[i]=="E" ||T[i]=="U" ||T[i]=="I" ||T[i]=="Y" ||T[i]=="O" then
+  k=k+1;
+
+ end if
+i=i+1;
+end while
+    
+ write ('the number of caracter are',i );
+ write ('the number of words are',j ); 
+ write ('the number of vowyel are',k );
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+algorithm matrix
+var
+a=array_of_integer[[3][5]];
+
+i,j:integer;
+
+begin
+// this is to get the table from the user
+for i:=1 to 3 do
+  for j:=1 to 5 do
+
+   write ('insert the value of a[', i,' ,' ,j , ']' );
+    read (a[i][j]);     
+
+  end j
+
+end i
+
+// this is to desplay the table 
+for i:=1 to 3 do
+  for j:=1 to 5 do
+
+  
+    write (a[i][j]);     
+
+  end j
+
+end i
+
+end
+
+
